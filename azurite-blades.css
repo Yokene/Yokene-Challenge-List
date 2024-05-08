@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative; /* Необходимо для абсолютного позиционирования элемента .back */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+
+    font-family: 'Anton', sans-serif;
+    background-size: cover;
+    background-image: url('main\ bg.PNG');
+    background-attachment: fixed;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+
+.slider{
+    position: relative;
+    background-image: url('Challenge\ place\ bg.jpg');
+    width: 50%;
+    min-width: 420px;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.4);
+    margin-top: 10px;
+}
+
+.slider .images img{
+    width: 420px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: none;
+    padding: 10px;
+}
+
+.slider .images{
+    height: 50%;
+}
+
+.slider .images .imag{
+    display: block;
+}
+
+
+.imag{
+    width: 420px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    height: 750px;
+    padding: 20px 35px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid 0.1px #fafafa;
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.4);
+}
+
+.slider .dots{
+    margin: 5px auto 0;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider .dots button{
+    height: 12px;
+    width: 20px;
+    border: 2px solid #8f8f8f;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #8f8f8f00;
+    margin-bottom: 15px;
+}
+
+.slider .dots button {
+    background-color: #8f8f8f; /* цвет кнопок */
+}
+
+.slider button#prev,
+.slider button#next{
+    height: 40px;
+    width: 40px;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.slider button#prev{
+    left: -15px;
+}
+
+.slider button#next{
+    right: -15px;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+P{
+    font-size: 20px;
+}
+
+.info{
+    background-image: url('Challenge\ place\ bg.jpg');
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    flex-basis: 650px;
+    height: 350px;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.2);
+    margin-top: 15px;
+}
+
+.info-txt{
+    background: rgba(211, 211, 211, 0.521);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    font-size: 40px;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.3);
+}
+
+.txt{
+    font-size: 30px;
+}
+
+.back {
+    position: absolute;
+    top: 20px; /* Задает расстояние от верхнего края */
+    left: 20px; /* Задает расстояние от правого края */
+}
+
+.btn-back{
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    border: solid 0.1px #fafafa;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+}
+
+.back-txt{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #e7e7e7;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 750px) {
+    .info{
+        width: 300px;
+        text-align: center;
+        flex-basis: 400px;
+        font-size: 10px;
+        height: 340px;
+        margin: 0;
+        padding-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .info {
+        width: 100%;
+        flex-basis: auto;
+        height: auto;
+    }
+
+    .container{
+        flex-basis: 300px;
+        padding: 10px 15px;
+        width: 100px;
+        height: 560px;
+        margin-left: 0;
+    }
+
+    .text{
+        font-size: 25px;
+    }
+
+    img{
+        width: 250px;
+        padding-top: 10px;
+    }
+
+    p{
+        margin: 15px;
+        font-size: 17px;
+    }
+
+    button{
+        width: 330px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.637);
+        text-align: center;
+        opacity: 10px;
+
+    }
+    .back{
+        box-shadow: 0 2px 15px rgba(35, 35, 35, 0.3);
+        text-align: center;
+        opacity: 0;
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+
+    .btn-back {
+        display: none; /* скрываем кнопку при ширине экрана менее 750px */
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .slider .images img {
+        height: auto;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+
+    .info p {
+        font-size: 17px;
+    }
+
+    .back {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    .btn-back {
+        width: 50px;
+        height: 50px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .slider .dots {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .slider .dots button {
+        height: 10px;
+        width: 15px;
+    }
+
+    .slider button#prev,
+    .slider button#next {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .slider .images .imag{
+        display: block;
+        width: 320px;
+    }
+}
+

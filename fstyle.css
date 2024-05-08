@@ -1,0 +1,114 @@
+body{
+    position: relative; /* Необходимо для абсолютного позиционирования элемента .back */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    background-image: url('main\ 3.jpg');
+    background-size: cover;
+    background-size: 1600px;
+}
+
+.main-title{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.links a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d8d8d8;
+    transition: all 0.3s ease;
+}
+
+.links a:hover::after{
+    width: 70%;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-decoration: none;
+}
+
+.main-txt{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+html,
+body {
+    height: 90%;
+}
+
+.btn{
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 40px;
+    border: solid 0.5px black;
+    background-image: url('Challenge\ place\ bg.jpg');
+}
+
+.text-btn{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    transition: 0.3s ease;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 15px rgb(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 1290px) {
+    body {
+        background-size: 1600px;
+    }
+
+    .main-txt{
+        font-size: 13px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+}
