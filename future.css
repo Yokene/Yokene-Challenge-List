@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    margin-top: 10px;
     font-family: 'Anton', sans-serif;
     background-size: cover;
     background-image: url('Future\ list\ bg.jpg');
@@ -35,12 +36,11 @@ html, body{
 
 .info-main{
     font-size: 24px;
-    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 img{
     width: 200px;
-    height: 112.5px;
+
     border-radius: 10px;
     background-color: #a3a3a3;
 }
@@ -82,9 +82,8 @@ img{
 @media screen and (max-width: 1000px) {
     .challenge-place {
         flex-basis: calc(100% - 40px); /* Растягиваем элемент на всю ширину с отступами по 20px */
-        margin-left: 30px; /* Устанавливаем отступы по 20px со всех сторон */
-        margin-right: 30px;
-        padding: 20px; /* Уменьшаем отступы внутри элемента */
+        margin: 15px 30px 15px 30px;
+        padding: 10px; /* Уменьшаем отступы внутри элемента */
     }
     
     .text {
@@ -93,7 +92,7 @@ img{
     }
     
     img {
-        width: 100px;
+        width: 130px;
         height: auto; /* Уменьшаем ширину изображений */
 
     }

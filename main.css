@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    margin-top: 10px;
     font-family: 'Anton', sans-serif;
     background-image: url('main\ bg.PNG');
     background-attachment: fixed;
@@ -95,8 +96,7 @@ a{
     
     .challenge-place {
         flex-basis: calc(100% - 40px); /* Растягиваем элемент на всю ширину с отступами по 20px */
-        margin-left: 30px; /* Устанавливаем отступы по 20px со всех сторон */
-        margin-right: 30px;
+        margin: 15px 30px 15px 30px;
         padding: 10px; /* Уменьшаем отступы внутри элемента */
     }
     
