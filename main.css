@@ -15,7 +15,7 @@ html, body{
 .challenge-place{
     display: flex;
     flex-basis: 400px;
-    background-image: url('Challenge\ place\ bg.jpg');
+    background-color: white;
     margin: 20px 140px;
     padding: 10px;
     border-radius: 10px;
@@ -28,15 +28,14 @@ html, body{
 .info-txt{
     text-align: center;
     border-radius: 10px;
-    background-color: #fafafa;
+    background-color: white;
     margin: 20px 140px;
     padding: 20px;
-    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.2);
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.1);
 }
 
 .info-main{
     font-size: 24px;
-    text-shadow: 0 2px 15px rgba(35, 35, 35, 0.2);
 }
 
 img{
@@ -76,7 +75,7 @@ img{
 .challenge-place:hover {
     transform: scale(0.99); /* Уменьшаем на 5% при наведении */
     box-shadow: 0 2px 15px rgba(35, 35, 35, 0.3);
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(245, 245, 245);
 }
 
 a{
@@ -88,6 +87,73 @@ a{
 .secret{
     opacity: 0;
     padding: 0;
+}
+
+
+
+.nav-btn {
+    width: 350px;
+    height: 35px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Добавлено */
+}
+
+.nav-btn-future {
+    width: 350px;
+    height: 35px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Добавлено */
+}
+
+
+.nav-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.2);
+    background-color: #fafafa;
+    text-decoration: none;
+}
+
+.nav-btn-future:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.2);
+    background-color: #fafafa;
+    text-decoration: none;
+}
+
+.nav-btn a{
+    color: inherit; /* Использовать цвет, унаследованный от родительского элемента */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+
+.nav-btn-future a{
+    color: inherit; /* Использовать цвет, унаследованный от родительского элемента */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+
+.links{
+    text-decoration: none;
+}
+
+.links-future{
+    text-decoration: none;
+}
+
+.nav{
+    text-align: center;
 }
 
 
@@ -121,40 +187,7 @@ a{
     }
 
 }
-.nav-btn {
-    width: 350px;
-    height: 35px;
-    margin: 10px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: solid 0;
-    background-color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Добавлено */
-}
 
-
-.nav-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 2px 15px rgba(35, 35, 35, 0.2);
-    background-color: #fafafa;
-    text-decoration: none;
-}
-
-.nav-btn a{
-    color: inherit; /* Использовать цвет, унаследованный от родительского элемента */
-    text-decoration: none; /* Убрать подчеркивание */
-}
-
-.links{
-    text-decoration: none;
-}
-
-.nav{
-    text-align: center;
-}
 
 @media screen and (max-width: 750px) {
     .nav-btn {
@@ -166,5 +199,12 @@ a{
 
     .special-btn{
         width: 150px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .nav-btn-future{
+        width: 400px;
+        margin: 10px 30px 0 30px;
     }
 }
